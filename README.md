@@ -18,7 +18,7 @@
      	3. In the field password add value: Test1234  
        	4. In the field confirm password add value: Test1234  
 	
-**Expected result:** User is registraded successfully is displayed message "You have registrated successfully!".  
+**Expected result:** User is registered successfully is displayed message "You have registered successfully!".  
 
 ## Test case 2 - "Validate username field input data"  
 **Description** - Verify **username** field input data based on requirements that username must be between 3 and 20 characters and in this field is allowed alphanumeric characters (letters and numbers).  
@@ -27,15 +27,15 @@
 
 **Related documents** - Registration Page Requirements  
 
-**Instruction how to perform test steps** - Add value to **username** field and press buttom "Register". Ignor error messages that are displayed for other input fields if you don't want to see other input field error messages add valid data (for example email: test@test.com  password: Test1234  confirm password: Test1234 ).  
+**Instruction how to perform test steps** - Add value to **username** field and press button "Register". Ignore error messages that are displayed for other input fields if you don't want to see other input field error messages add valid data (for example email: test@test.com  password: Test1234  confirm password: Test1234 ).  
 
 |**Test Step**                                                     | **Test Data**                   | **Expected Result**                                                                                      |   
 |------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------|
-|Add value to username field.<br> Username less than 3 char. <br>Press button Register. | username: Te   |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field.<br> Username more than 20 char. <br>Press button Register.| username: Test1testTestTestTest |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field.<br> Username contains symbols that are not numbers or letters. <br>Press button Register. | username: test&*  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field.<br> Username contains emoji. <br>Press button Register. | username: test😀  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.". |
-|Leave username fiels **empty** <br>Press button Register.     |                        | Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.". |
+|Add value to username field.<br> Username less than 3 char. <br>Press button Register. | username: Te   |Below username input field is displayed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username more than 20 char. <br>Press button Register.| username: Test1testTestTestTest |Below username input field is displayed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username contains symbols that are not numbers or letters. <br>Press button Register. | username: test&*  |Below username input field is displayed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username contains emoji. <br>Press button Register. | username: test😀  |Below username input field is displayed error message "Username must be 3-20 alphanumeric characters.". |
+|Leave username field **empty** <br>Press button Register.     |                        | Below username input field is displayed error message "Username must be 3-20 alphanumeric characters.". |
 
 ## Test case 3 - "Validate Error message if invalid input data are added in the input fields"
 **Description** - Validate displayed error messages below the input fields when are added invalid input values.  
@@ -44,7 +44,7 @@
 
 **Related documents** - Registration Page Requirements  
 
-**Instruction how to perform test steps** - Add invalid input values to Registration form infput fields and check displayed error message.  
+**Instruction how to perform test steps** - Add invalid input values to Registration form input fields and check displayed error message.  
 
 |**Test Step**                                                     | **Test Data**                   | **Expected Result**                                                                                      |   
 |------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -71,13 +71,13 @@
 
 **Affected version**: Chrome Version 134.0.6998.36  
 
-**Criticality**: Low (not affecting functionality error messages are displayed and users can understan where is the problem)  
+**Criticality**: Low (not affecting functionality error messages are displayed and users can understand where is the problem)  
 
 ## Bug 2 "Submit button"
-**Description**: In the requirements is written **Submit** button but in the application is displayed **Register** buttom.  
+**Description**: In the requirements is written **Submit** button but in the application is displayed **Register** button.  
 
-**Sterps to reproduce**  
-1. Opem Registration Form (https://auth-home-task.vercel.app/register)
+**Steps to reproduce**  
+1. Open Registration Form (https://auth-home-task.vercel.app/register)
 2. In the bottom of Registration Form is visible button **Register**
 
 **Actual result**: Button in the Registration From application is called **Register**  
@@ -91,14 +91,14 @@
 ## Bug 3 "Specific symbol usage in the Password creation" 
 **Description**: In the requirements is written that password must be at least 8 characters long and must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number. It is not specified in the requirement that special symbol usage is allowed like: % & * $ # etc. but now in password field user can add specific symbols.  
 
-**Sterps to reproduce**  
-1. Opem Registration Form (https://auth-home-task.vercel.app/register)
+**Steps to reproduce**  
+1. Open Registration Form (https://auth-home-task.vercel.app/register)
 2. In the field password add: Test12%#
 3. Press button "Register"
 
-**Actual result**: No error message is displeyed  
+**Actual result**: No error message is displayed  
 
-**Expected result**: Should be displeyed error message because according to the requirements there are not mentioned specific stmboly usage in the password field. 
+**Expected result**: Should be displayed error message because according to the requirements there are not mentioned specific symbol usage in the password field. 
 
 **Affected version**: Chrome Version 134.0.6998.36  
 
@@ -107,7 +107,7 @@
 # Task 3 (Based on requirements automate 1 test case using playwright)
 Link to automated test "Successful Registration" - https://github.com/Ilzhuks/playwright/blob/master/tests/registrationSuccessful.spec.ts  
 
-# Task 4 (Add points to improve froms UI/UX)
+# Task 4 (Add points to improve from's UI/UX)
 - For email field could be added "shadow text" as an example for correct email format that will disappear when user will make a click on email input field.
 - With asterisk (star) symbol mark mandatory fields - so that user can in advance know what fields are mandatory.
 - Progress indicator for **Password** field - when user creates password in the progress indicator are displayed what requirements are met and what else needs to be added. For exapmle mentioned requirement are colored in green (Requirements for password field: Uppercase letter, lowercase letters, numbers, at least 8 characters).

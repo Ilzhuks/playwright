@@ -9,8 +9,8 @@
 - confirm password: Test1234
   
 **Steps to execute:**
-	1. In the field username add value: Test
- 	2. In the field email add value: test@test.com
-  	3. In the field password add value: Test1234
-   	4. In the field confirm password add value: Test1234
+	1. In the field username add value: Test  
+  	2. In the field email add value: test@test.com  
+     	3. In the field password add value: Test1234  
+       	4. In the field confirm password add value: Test1234  
 **Expected result:** User is registraded successfully is displayed message "You have registrated successfully!".

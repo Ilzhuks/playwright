@@ -3,10 +3,10 @@
 Description - Verify that user can successfully registrate when are provided valid input data for fields: username, email, password and confirm password.
 Preconditions - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.
 Test data:
-	- username: Test
- 	- email: test@test.com
-  	- password: Test1234
-   	- confirm password: Test1234
+-username: Test
+-email: test@test.com
+-password: Test1234
+-confirm password: Test1234
 Steps to execute:
 	1) In the field username add value: Test
  	2) In the field email add value: test@test.com

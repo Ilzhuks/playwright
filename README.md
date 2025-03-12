@@ -2,6 +2,7 @@
 ## Test case 1 - "Successful User Registration" 
 **Description** - Verify that user can successfully registrate when are provided valid input data for fields: username, email, password and confirm password.  
 **Preconditions** - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.  
+**Related documents** - Registration Page Requirements  
 
 **Test data:**
 - username: Test
@@ -18,13 +19,17 @@
 **Expected result:** User is registraded successfully is displayed message "You have registrated successfully!".  
 
 ## Test case 2 - "Validate username field input data"  
-**Description** - Verify username field input data based on requirements that username mutst be between 3 and 20 characters and in this field is allowed alphanumeric characters (letters and numbers).  
+**Description** - Verify **username** field input data based on requirements that username must be between 3 and 20 characters and in this field is allowed alphanumeric characters (letters and numbers).  
 **Preconditions** - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.  
+**Related documents** - Registration Page Requirements  
+**Instruction how to perform test steps** - Add value to **username** field and press buttom "Register". Ignor error messages that are displayed for other input fields if you don't want to see other input field error messages add valid data (for example email: test@test.com  password: Test1234  confirm password: Test1234 ).  
 
 |**Test Step**                                                     | **Test Data**                   | **Expected Result**                                                                                      |   
 |------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------|
 |Add value to username field <br>Press button Register             | username: Te                    |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
 |Add value to username field <br>Press button Register             | username: Test1testTestTestTest |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
 |Add value to username field <br>Press button Register             | username: test&*                |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field <br>Press button Register             | username: test😀                |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field <br>Press button Register             | username: test😀                |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |  
+
+
 

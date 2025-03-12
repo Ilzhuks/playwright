@@ -102,7 +102,7 @@
 
 **Affected version**: Chrome Version 134.0.6998.36  
 
-**Criticality**: High (user can user characters in password that is not mentioned in the requirements) 
+**Criticality**: High (user can use characters in password that is not mentioned in the requirements) 
 
 # Task 3 (Based on requirements automate 1 test case using playwright)
 Link to automated test "Successful Registration" - https://github.com/Ilzhuks/playwright/blob/master/tests/registrationSuccessful.spec.ts  

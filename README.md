@@ -1,7 +1,7 @@
 # Task 1 Based on requirements create 3 manual test cases
 ## Test case 1 - "Successful User Registration" 
-Description - Verify that user can successfully registrate when are provided valid input data for fields: username, email, password and confirm password.
-Preconditions - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.
+Description - Verify that user can successfully registrate when are provided valid input data for fields: username, email, password and confirm password.  
+Preconditions - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.  
 Test data:
 - username: Test
 - email: test@test.com

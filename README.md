@@ -1,6 +1,6 @@
-**Task 1: Based on requirements create 3 manual test cases **
+#**Task 1: Based on requirements create 3 manual test cases **
 
-	**TEST CASE 1**
+	##**TEST CASE 1**
 		  "Successful User Registration" 
 		  Description: Verify that user can successfully registrate when are provided valid data for fields: username, email, password and confirm password.
 		  Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
@@ -19,7 +19,7 @@
 	  	Expected Result: Is displayed message "You have registered successfully!"
 
 
-	**TEST CASE  2**
+	##**TEST CASE  2**
 		"Validate username field input data"
 		Description: Verify username field input data based on the requirements in the specification.
 		Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
@@ -84,7 +84,7 @@
                 6) Press button "Register"
 		Expected Result: Below Username input field is displayed error message "Username must be 3-20 alphanumeric characters."
 
-	**TEST CASE  3**
+	##**TEST CASE  3**
 		"Validate Error message display if wrong data are added in the fields"
 		Description: Validate erros messages displayed when in the fields are added wrong data.
 		Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
@@ -148,9 +148,9 @@
             Username field error message: "Username must be 3-20 alphanumeric characters."
 			Email field error message: "Invalid email format."
 
-**Task 2: Report at least 1 Bug You have found during the testing **
+#**Task 2: Report at least 1 Bug You have found during the testing **
 	
-	Bug 1 "Fields with errors are not Highlighted"
+	## **Bug 1 "Fields with errors are not Highlighted"**
 		Description: In the requirements is mentioned that field that has error need to be highlighted and show error message. Error message is displayed but fields with error is not highlighted.
 		Steps to reproduce:
 			1) Open Registration Form page
@@ -166,7 +166,7 @@
 
 
 
-	Bug 2 "Submit button"
+	## **Bug 2 "Submit button"**
 		Description: In the requirements is written "Submit" button but in the application in the Registration Form is mentioned "Register" button not " Submit".
 		Steps to reprodude:
 			1) Open Registration Form page
@@ -176,12 +176,12 @@
 		Affected version:
 		Criticality: Low (in this case user can easy understand what button need to press as there are only one option available)
 
-**Task 3: Based on requirements automate 1 manual test case using playwright **
+#**Task 3: Based on requirements automate 1 manual test case using playwright **
 
 Link to automated test "Successful Registration" - https://github.com/Ilzhuks/playwright/blob/master/tests/registrationSuccessful.spec.ts
 
 
-**Task 4: Add points to improve form's UI/UX **
+#**Task 4: Add points to improve form's UI/UX **
     - For Email field could be added "shadow text" with email format example that disappears when user make a click on the email field.
     - With asteric (start) mark mandatory fields - so that user can in advance know what fields are mandatory 
     - Progress indicator for Password field (that is counted what required steps are done for password to be valid depending on requirements) or Indicator of message how strong is created Password (week, medium or strong with colour indicator red for week, yellow for medium and green for strong password) 
@@ -190,7 +190,7 @@ Link to automated test "Successful Registration" - https://github.com/Ilzhuks/pl
 
 
 
-**Task 5: Anything You would improve/specify more in the existing requirements **
+#**Task 5: Anything You would improve/specify more in the existing requirements **
     - Does username and e-mail field values need to be unique or there can be cases when username are the same but with different emails or other way around
     - What happened when user try to registrate with data that already are registrated (is there a message that user already exists)
     - "Submit button" in the application is called "Register" would add the same button name in the Requirements and Application so that there are no misunderstandings.
@@ -200,6 +200,6 @@ Link to automated test "Successful Registration" - https://github.com/Ilzhuks/pl
 
 
 
-**Task 6: What else can be tested? **
+#**Task 6: What else can be tested? **
     - Security testing
     - Data duplicate testing

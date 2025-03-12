@@ -1,6 +1,6 @@
 **Task 1: Based on requirements create 3 manual test cases **
 
-	**Test Case 1**
+	**TEST CASE 1**
 		  "Successful User Registration" 
 		  Description: Verify that user can successfully registrate when are provided valid data for fields: username, email, password and confirm password.
 		  Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
@@ -19,7 +19,7 @@
 	  	Expected Result: Is displayed message "You have registered successfully!"
 
 
-	**Test Case 2**
+	**TEST CASE  2**
 		"Validate username field input data"
 		Description: Verify username field input data based on the requirements in the specification.
 		Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
@@ -38,7 +38,6 @@
                 5) In the field "Confirm Password" add - Test6821
                 6) Press button "Register"
 		Expected Result: Below Username input field is displayed error message "Username must be 3-20 alphanumeric characters."
-
 
         Scenario 2
             Test Data: 
@@ -85,28 +84,10 @@
                 6) Press button "Register"
 		Expected Result: Below Username input field is displayed error message "Username must be 3-20 alphanumeric characters."
 
-	**Test Case 3**
+	**TEST CASE  3**
 		"Validate Error message display if wrong data are added in the fields"
 		Description: Validate erros messages displayed when in the fields are added wrong data.
 		Preconditions: User opens https://auth-home-task.vercel.app/ and press button "Go to registration". "Registration Form" is opened.
-	Scenario 1
-		Test Data: 
-			username: Te
-			email: test@test
-			password: Test68
-			confirm password: Test6
-		Steps to execute:
-			1) Open Registration Form page
-			2) In the field "Username" add - Te
-			3) In the field "Email" add - test@test
-			4) In the field "Password" add - Test68
-			5) In the field "Confirm Password" add - Test6
-			6) Press button "Register"
-		Expected Results: For every field is displayed error message"
-				Username field error message:
-				Email field error message:
-				Password field error message:
-				Confirm password field error message:
 
 		Steps to execute for each test scenario:
 			1) Open Registration Form page
@@ -121,8 +102,8 @@
 			email: test@test
 			password: Test68
 			confirm password: Test6
-		Expected Results: For every field is displayed error message"				
-            Username field error message: "Username must be 3-20 alphanumeric characters."
+		Expected Results: For every field is displayed error message			
+            		Username field error message: "Username must be 3-20 alphanumeric characters."
 			Email field error message: "Invalid email format."
 			Password field error message: "Password must be at least 8 characters with 1 uppercase, 1 lowercase, and 1 number."
 			Confirm password field error message: "Passwords do not match."
@@ -133,7 +114,7 @@
 			email: test@test
 			password: Test68
 			confirm password: Test6
-		Expected Results: For every field is displayed error message"				
+		Expected Results: For email, password and confirm password fields are diplayed error message:				
 			Email field error message: "Invalid email format."
 			Password field error message: "Password must be at least 8 characters with 1 uppercase, 1 lowercase, and 1 number."
 			Confirm password field error message: "Passwords do not match."   
@@ -144,7 +125,7 @@
 			email: test@test.com
 			password: Test68
 			confirm password: Test6
-		Expected Results: For every field is displayed error message"				
+		Expected Results: For password and confirm password fields are diplayed error message:				
 			Password field error message: "Password must be at least 8 characters with 1 uppercase, 1 lowercase, and 1 number."
 			Confirm password field error message: "Passwords do not match."
 
@@ -154,7 +135,7 @@
 			email: test@test
 			password: Test1234
 			confirm password: Test6
-		Expected Results: For every field is displayed error message"				
+		Expected Results: For confirm password field is diplayed error message:				
 			Confirm password field error message: "Passwords do not match."
 
    Scenario 5
@@ -163,11 +144,9 @@
 			email: test@test
 			password: Test1234
 			confirm password: Test1234
-		Expected Results: For every field is displayed error message"				
+		Expected Results: For username and email fields are displayed error message				
             Username field error message: "Username must be 3-20 alphanumeric characters."
 			Email field error message: "Invalid email format."
-
-
 
 **Task 2: Report at least 1 Bug You have found during the testing **
 	
@@ -213,10 +192,11 @@ Link to automated test "Successful Registration" - https://github.com/Ilzhuks/pl
 
 **Task 5: Anything You would improve/specify more in the existing requirements **
     - Does username and e-mail field values need to be unique or there can be cases when username are the same but with different emails or other way around
-	- What happened when user try to registrate with data that already are registrated (is there a message that user already exists)
-	- "Submit button" in the application is called "Register" would add the same button name in the Requirements and Application so that there are no misunderstandings.
-	- In Requirements not mentioned specific symbol usage (like &, *, %, $, etc.) in "Password" field. The Password field allow to use these specific symbols.
-	- Add what are the clear error message for each field that is expected to be shown.
+    - What happened when user try to registrate with data that already are registrated (is there a message that user already exists)
+    - "Submit button" in the application is called "Register" would add the same button name in the Requirements and Application so that there are no misunderstandings.
+    - In Requirements not mentioned specific symbol usage (like &, *, %, $, etc.) in "Password" field. The Password field allow to use these specific symbols.
+    - Add what are the clear error message for each field that is expected to be shown.
+    - In requirements add info about warning messages for Email fiels, for example if user add email test@test,com is displeyed warning message " A part following '@' should not contain the symbol ','. " 
 
 
 

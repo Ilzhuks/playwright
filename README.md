@@ -8,7 +8,7 @@
 - password: Test1234
 - confirm password: Test1234
   
-**Steps to execute:**
+**Steps to execute:**  
 	1. In the field username add value: Test  
   	2. In the field email add value: test@test.com  
      	3. In the field password add value: Test1234  

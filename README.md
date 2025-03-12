@@ -23,7 +23,7 @@
 
 |**Test Step**                        | **Test Data**            | **Expected Result**                                                                                      |   
 |-------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------|
-|Add values to username field         | username: Te             |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add values to username field <br>Press button Registrate          | username: Te             |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
 |Press button Registrate              |                          |                                                                                                          |
 |-------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------|
 

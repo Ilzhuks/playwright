@@ -65,10 +65,13 @@
 5. In the field confirm password add: Test123
 6. Press button **Register**
 
-**Actual result**: Fields with errors are **not** highlighted.
-**Expected result**: Fields with errors are highlighted.
-**Affected version**: Chrome Version 134.0.6998.36
-**Criticality**: Low (not affecting functionality error messages are displayed and users can understan where is the problem)
+**Actual result**: Fields with errors are **not** highlighted.  
+
+**Expected result**: Fields with errors are highlighted.  
+
+**Affected version**: Chrome Version 134.0.6998.36  
+
+**Criticality**: Low (not affecting functionality error messages are displayed and users can understan where is the problem)  
 
 ## Bug 2 "Submit button"
 **Description**: In the requirements is written **Submit** button but in the application is displayed **Register** buttom.  
@@ -77,16 +80,19 @@
 1. Opem Registration Form (https://auth-home-task.vercel.app/register)
 2. In the bottom of Registration Form is visible button **Register**
 
-**Actual result**: Button in the Registration From application is called **Register**
-**Expected result**: Button in the Registration From application is called **Submit** 
-**Affected version**: Chrome Version 134.0.6998.36
+**Actual result**: Button in the Registration From application is called **Register**  
+
+**Expected result**: Button in the Registration From application is called **Submit**  
+
+**Affected version**: Chrome Version 134.0.6998.36  
+
 **Criticality**: Low (in this case user can easy understand what button need to press as there are only one option available)  
 
 # Task 3 (Based on requirements automate 1 test case using playwright)
 Link to automated test "Successful Registration" - https://github.com/Ilzhuks/playwright/blob/master/tests/registrationSuccessful.spec.ts  
 
 # Task 4 (Add points to improve from's UI/UX)
--For email field could be added "shadow text" as an example for correct email format that will disappear when user will make a click on email input field.  
+- For email field could be added "shadow text" as an example for correct email format that will disappear when user will make a click on email input field.  
 
 
 

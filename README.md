@@ -21,9 +21,9 @@
 **Description** - Verify username field input data based on requirements that username mutst be between 3 and 20 characters and in this field is allowed alphanumeric characters (letters and numbers).  
 **Preconditions** - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.  
 
-|**Test Step**                        | **Test Data**            | **Expected Result**                                                                                      |   
-|-------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------|
-|Add values to username field <br>Press button Registrate          | username: Te             |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Press button Registrate              |                          |                                                                                                          |
-|-------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------|
+|**Test Step**                                                     | **Test Data**                   | **Expected Result**                                                                                      |   
+|------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------|
+|Add value to username field <br>Press button Registrate           | username: Te                    |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field <br>Press button Registrate           | username: Test1testTestTestTest |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|                                                                  |                                 |                                                                                                        |
 

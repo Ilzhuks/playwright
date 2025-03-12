@@ -15,4 +15,13 @@
      	3. In the field password add value: Test1234  
        	4. In the field confirm password add value: Test1234  
 	
-**Expected result:** User is registraded successfully is displayed message "You have registrated successfully!".
+**Expected result:** User is registraded successfully is displayed message "You have registrated successfully!".  
+
+## Test case 2 - "Validate username field input data"  
+**Description** - Verify username field input data based on requirements that username mutst be between 3 and 20 characters and in this field is allowed alphanumeric characters (letters and numbers).  
+**Preconditions** - User opens https://auth-home-task.vercel.app/ and press button **Go to registration**. Registration Form is opened.  
+
+|**Test Step**| **Test Data**| **Expected Result**|  
+|-------------|--------------|--------------------|
+|test         | wetwetwet    |wtwetwet            |
+

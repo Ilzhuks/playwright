@@ -31,10 +31,10 @@
 
 |**Test Step**                                                     | **Test Data**                   | **Expected Result**                                                                                      |   
 |------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------|
-|Add value to username field<br> username less than 3 char. <br>Press button Register | username: Te   |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field<br> username more than 20 char. <br>Press button Register| username: Test1testTestTestTest |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field<br> username contains symbols that are not numbers or letters <br>Press button Register | username: test&*  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
-|Add value to username field<br> username contains emoji <br>Press button Register | username: test😀  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |  
+|Add value to username field.<br> Username less than 3 char. <br>Press button Register. | username: Te   |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username more than 20 char. <br>Press button Register.| username: Test1testTestTestTest |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username contains symbols that are not numbers or letters. <br>Press button Register. | username: test&*  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |
+|Add value to username field.<br> Username contains emoji. <br>Press button Register. | username: test😀  |Below username input field is displeyed error message "Username must be 3-20 alphanumeric characters.".   |  
 
 
 
